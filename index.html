@@ -10,14 +10,13 @@
     </head>
     <body>
         <main>
-            <form action="№" method="post">
+            <form action="" method="post">
                 <fieldset>
-                    <legend>Your name</legend>
+                    <legend>Ім'я</legend>
                     <label>
                         <input
                             type="text"
                             name="first-name"
-                            required
                             autofocus
                             placeholder="First name"
                             tabindex="1"
@@ -28,10 +27,66 @@
                             type="text"
                             name="last-name"
                             placeholder="Last name"
-                            required
                             tabindex="2"
                     /></label>
                 </fieldset>
+                <label
+                    >Ваш email
+                    <input
+                        type="email"
+                        name="user-email"
+                        placeholder="your-email.com"
+                        tabindex="3"
+                /></label>
+                <fieldset>
+                    <legend>Номер телефону *</legend>
+                    <label
+                        ><input
+                            type="tel"
+                            name="user-number"
+                            required
+                            tabindex="4"
+                    /></label>
+                    <label
+                        ><input
+                            type="tel"
+                            name="user-number"
+                            required
+                            tabindex="5"
+                    /></label>
+                    <label
+                        ><input
+                            type="tel"
+                            name="user-number"
+                            required
+                            tabindex="6"
+                    /></label>
+                </fieldset>
+                <label
+                    >Оберіть місто *<select
+                        name="select-city"
+                        id="select-city"
+                        required
+                        tabindex="7"
+                    >
+                        <option value="" disabled selected>
+                            Оберіть місто
+                        </option>
+                        <option value="Kyiv">Київ</option>
+                        <option value="Odessa">Одеса</option>
+                        <option value="Zaporozhye">Запоріжжя</option>
+                        <option value="Kharkiv">Харків</option>
+                    </select></label
+                >
+
+                <label
+                    >Залиште коментар *<textarea
+                        name="user-comment"
+                        id="user-comment"
+                        required
+                        tabindex="8"
+                    ></textarea></label
+                ><button type="submit">Відправити</button>
             </form>
         </main>
     </body>
