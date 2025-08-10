@@ -10,9 +10,14 @@
     </head>
     <body>
         <main>
+            <h1>Контактна інформація</h1>
+            <div>
+                будь ласка, заповніть вашу інформацію, і ми надішлемо ваше
+                замовлення
+            </div>
             <form action="" method="post">
                 <fieldset>
-                    <legend>Ім'я</legend>
+                    <legend><span>Ім'я</span></legend>
                     <label>
                         <input
                             type="text"
@@ -31,7 +36,7 @@
                     /></label>
                 </fieldset>
                 <label
-                    >Ваш email
+                    ><span>Ваш email</span>
                     <input
                         type="email"
                         name="user-email"
@@ -39,31 +44,37 @@
                         tabindex="3"
                 /></label>
                 <fieldset>
-                    <legend>Номер телефону *</legend>
+                    <legend>
+                        <span><span>Номер телефону *</span></span>
+                    </legend>
                     <label
                         ><input
                             type="tel"
+                            placeholder="000"
                             name="user-number"
                             required
                             tabindex="4"
                     /></label>
-                    <label
-                        ><input
+                    <label>
+                        <input
                             type="tel"
                             name="user-number"
+                            placeholder="000"
                             required
                             tabindex="5"
                     /></label>
                     <label
                         ><input
                             type="tel"
+                            placeholder="0000"
                             name="user-number"
                             required
                             tabindex="6"
                     /></label>
                 </fieldset>
                 <label
-                    >Оберіть місто *<select
+                    ><span>Оберіть місто *</span>
+                    <select
                         name="select-city"
                         id="select-city"
                         required
@@ -80,7 +91,8 @@
                 >
 
                 <label
-                    >Залиште коментар *<textarea
+                    ><span>Залиште коментар *</span>
+                    <textarea
                         name="user-comment"
                         id="user-comment"
                         required
