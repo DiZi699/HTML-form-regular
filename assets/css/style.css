@@ -1,76 +1,104 @@
-fieldset {
-    border: none; /* убрать рамку */
-    padding: 0;
-    margin-bottom: 20px;
+* {
+    box-sizing: border-box;
 }
 
-fieldset legend {
-    font-weight: bold;
-    margin-bottom: 8px;
-    display: block;
-}
-
-fieldset label {
-    flex: 1;
-}
-
-fieldset input {
-    width: 100%;
-}
-
-fieldset:first-of-type {
+body {
+    min-height: 100vh;
     display: flex;
-    gap: 10px; /* расстояние между first name и last name */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../pictures/8eb93e7ffdb7ea45509abc04563b726e.jpg");
+    background-size: cover;
+    background-position: 25% 25%;
 }
-fieldset:nth-of-type(2) {
-    display: flex;
-    gap: 10px;
-}
-
-fieldset:nth-of-type(2) input {
-    width: 100%;
+h1,
+div {
+    text-align: center;
 }
 form {
-    max-width: 500px;
-    margin: 0 auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
 label {
-    display: block;
-    margin-bottom: 15px;
-}
-
-input,
-select,
-textarea {
     width: 100%;
-    padding: 8px 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 10px;
+    gap: 0 5px;
+}
+input {
+    outline: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
-textarea {
-    min-height: 80px;
-}
-button {
-    display: block;
-    margin: 20px auto 0;
-    padding: 10px 20px;
-    background-color: #0078d7;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #005fa3;
-}
 .valid {
     border: 2px solid green;
 }
 .invalid {
     border: 2px solid red;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: row;
+}
+span {
+    min-width: 150px;
+    margin: 20px;
+}
+.phone-fieldset {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.phone-inputs {
+    display: flex;
+    flex: 1;
+    gap: 10px;
+}
+
+.changeTown {
+    max-width: 30px;
+}
+main {
+    border: 2px solid black;
+    box-shadow: 0 0 20px;
+}
+
+h1,
+.contactParagraph {
+    display: flex;
+    justify-content: flex-start;
+    margin: 30px 20px;
+    padding: 0 10px;
+    font-size: 13px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 100px;
+}
+button {
+    margin: 20px 10px 30px 205px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    height: 30px;
+    cursor: pointer;
+}
+select {
+    width: 100%;
+    text-align: center;
+}
+h1 {
+    font-size: 20px;
+    font-weight: bold;
 }

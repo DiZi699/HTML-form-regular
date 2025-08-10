@@ -11,30 +11,35 @@
     <body>
         <main>
             <h1>Контактна інформація</h1>
-            <div>
-                будь ласка, заповніть вашу інформацію, і ми надішлемо ваше
+            <div class="contactParagraph">
+                Будь ласка, заповніть вашу інформацію, і ми надішлемо ваше
                 замовлення
             </div>
             <form action="" method="post">
                 <fieldset>
-                    <legend><span>Ім'я</span></legend>
-                    <label>
+                    <label class="name-label">
+                        <span class="userName">Ім'я</span>
                         <input
                             type="text"
                             name="first-name"
+                            id="first-name"
                             autofocus
                             placeholder="First name"
                             tabindex="1"
                         />
                     </label>
-                    <label>
+
+                    <label class="name-label">
+                        <span class="userName">Прізвище</span>
                         <input
                             type="text"
                             name="last-name"
                             placeholder="Last name"
                             tabindex="2"
-                    /></label>
+                        />
+                    </label>
                 </fieldset>
+
                 <label
                     ><span>Ваш email</span>
                     <input
@@ -43,37 +48,38 @@
                         placeholder="your-email.com"
                         tabindex="3"
                 /></label>
-                <fieldset>
-                    <legend>
-                        <span><span>Номер телефону *</span></span>
-                    </legend>
-                    <label
-                        ><input
-                            type="tel"
-                            placeholder="000"
-                            name="user-number"
-                            required
-                            tabindex="4"
-                    /></label>
-                    <label>
-                        <input
-                            type="tel"
-                            name="user-number"
-                            placeholder="000"
-                            required
-                            tabindex="5"
-                    /></label>
-                    <label
-                        ><input
-                            type="tel"
-                            placeholder="0000"
-                            name="user-number"
-                            required
-                            tabindex="6"
-                    /></label>
+                <fieldset class="phone-fieldset">
+                    <label class="phone-label">
+                        <span>Номер телефону*</span>
+                        <div class="phone-inputs">
+                            <input
+                                type="tel"
+                                placeholder="000"
+                                name="user-number1"
+                                required
+                                tabindex="4"
+                                value="(+38)"
+                            />
+                            <input
+                                type="tel"
+                                name="user-number2"
+                                placeholder="000"
+                                required
+                                tabindex="5"
+                            />
+                            <input
+                                type="tel"
+                                placeholder="0000"
+                                name="user-number3"
+                                required
+                                tabindex="6"
+                            />
+                        </div>
+                    </label>
                 </fieldset>
+
                 <label
-                    ><span>Оберіть місто *</span>
+                    ><span>Оберіть місто*</span>
                     <select
                         name="select-city"
                         id="select-city"
@@ -91,7 +97,7 @@
                 >
 
                 <label
-                    ><span>Залиште коментар *</span>
+                    ><span>Залиште коментар*</span>
                     <textarea
                         name="user-comment"
                         id="user-comment"

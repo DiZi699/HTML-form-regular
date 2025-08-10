@@ -2,7 +2,10 @@ const inputsRegularExp = {
     "first-name": /^[A-Z][a-z]{2,19}(-[A-Z][a-z]{2,19})?$/,
     "last-name": /^[A-Z][a-z]{2,19}(-[A-Z][a-z]{2,19})?$/,
     "user-email": /^[\w.-]+@[a-z]+\..+/,
-    "user-number": /^\+380\d{9}$/,
+    "user-number1": /^\(\+38\)\d{3}$/,
+    "user-number2": /^\d{3}$/,
+    "user-number3": /^\d{4}$/,
+    "user-comment": /^[A-Za-zА-Яа-яЁё0-9\s.,!?()\-]{10,500}$/,
 };
 
 const inputs = document.querySelectorAll("input");
